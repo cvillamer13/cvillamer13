@@ -1,5 +1,7 @@
 # 👨‍💻 Christian Villamer
 **`Full Stack Developer | API Developer | Software Engineer`**
+
+
 I'm a passionate Software Engineer who loves solving real-world problems through technology. My work is driven by curiosity, continuous learning, and a desire to build systems that improve efficiency and create impact. Whether it's developing backend architectures, designing seamless APIs, or building full-stack applications, I enjoy turning complex ideas into reliable, user-centered solutions. I thrive in environments where innovation, collaboration, and clean code come together to create meaningful digital experiences.
 
 <p align="left">
