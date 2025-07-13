@@ -49,7 +49,7 @@ I'm a passionate Software Engineer who loves solving real-world problems through
 
 ### 📊 Stats
 
-![cvillamer13's GitHub stats](https://github-readme-stats.vercel.app/api?username=cvillamer13&hide=contribs,prs,stars,issues)
+![cvillamer13's GitHub stats](https://github-readme-stats.vercel.app/api?username=cvillamer13&hide=contribs,prs,stars,issues&show_icons=true)
 
    
 <!--
