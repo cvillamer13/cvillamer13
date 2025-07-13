@@ -12,6 +12,17 @@ I'm a passionate Software Engineer who loves solving real-world problems through
 </p>
 
 ### 🧰 Languages and Tools
+
+💻 Programming Languages
+PHP (Laravel) <img align="left" alt="Java" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+
+TypeScript
+JavaScript
+Python
+C#
+HTML/CSS
+jQuery
+Ajax
    
 <!--
 **cvillamer13/cvillamer13** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
