@@ -14,7 +14,8 @@ I'm a passionate Software Engineer who loves solving real-world problems through
 ### 🧰 Languages and Tools
 
 💻 Programming Languages
-PHP (Laravel) <img align="left" alt="Java" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+ - <img align="left" alt="php" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" /> 
+ - 
 
 TypeScript
 JavaScript
