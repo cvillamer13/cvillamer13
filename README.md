@@ -51,6 +51,8 @@ I'm a passionate Software Engineer who loves solving real-world problems through
 
 ![cvillamer13's GitHub stats](https://github-readme-stats.vercel.app/api?username=cvillamer13&hide=contribs,prs,stars,issues&show_icons=true)
 
+#
+<a href="https://wakatime.com/@31acbbb3-78bf-494f-a09d-c636cd4339f6"><img src="https://wakatime.com/badge/user/31acbbb3-78bf-494f-a09d-c636cd4339f6.svg" alt="Total time coded since Jul 13 2025" /></a>
    
 <!--
 **cvillamer13/cvillamer13** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
