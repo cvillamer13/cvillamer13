@@ -44,6 +44,13 @@ I'm a passionate Software Engineer who loves solving real-world problems through
 <img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
 <img align="left" alt="Python" width="30px" style="padding-right:10px; background-color:white;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" />
 <br />
+
+#
+
+### 📊 Stats
+
+![cvillamer13's GitHub stats](https://github-readme-stats.vercel.app/api?username=cvillamer13&hide=contribs,prs,stars,issues)
+
    
 <!--
 **cvillamer13/cvillamer13** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
