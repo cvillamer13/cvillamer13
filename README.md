@@ -54,7 +54,7 @@ I'm a passionate Software Engineer who loves solving real-world problems through
 #
 <a href="https://wakatime.com/@31acbbb3-78bf-494f-a09d-c636cd4339f6"><img src="https://wakatime.com/badge/user/31acbbb3-78bf-494f-a09d-c636cd4339f6.svg" alt="Total time coded since Jul 13 2025" /></a>
 
-*
+#
 [![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=cvillamer13)](https://github.com/cvillamer13/)
 
    
