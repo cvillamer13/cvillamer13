@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christian R. Villamer – Software Engineer and Technical Lead</title>
+<meta name="description" content="Back-end software engineer and technical lead in the Philippines. Node.js, TypeScript, Kafka, AWS, Kubernetes and GitOps. AWS Certified Developer – Associate.">
+<meta name="theme-color" content="#2B55F5">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Christian R. Villamer – Software Engineer and Technical Lead">
+<meta property="og:description" content="APIs, event-driven systems, payments and cloud delivery, built and led from requirements to production.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232B55F5'/%3E%3Ctext x='32' y='43' font-size='30' font-weight='700' text-anchor='middle' fill='white' font-family='sans-serif'%3ECV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F7FC;--surf:#FFFFFF;--ink:#0E1630;--muted:#55627F;--line:#DDE3F0;--accent:#2B55F5;--accentsoft:#E6ECFF;--dark:#0B1226;--darkink:#E8EEFF;--ok:#4ADE9A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1022;--surf:#121B33;--ink:#EAF0FF;--muted:#A0AECB;--line:#24314F;--accent:#7C9BFF;--accentsoft:#1B2A52;--dark:#060B18;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0A1022;--surf:#121B33;--ink:#EAF0FF;--muted:#A0AECB;--line:#24314F;--accent:#7C9BFF;--accentsoft:#1B2A52;--dark:#060B18;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:5rem;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.w{max-width:70rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:Sora,"Trebuchet MS",system-ui,sans-serif;margin:0;line-height:1.12;letter-spacing:-.02em}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .w{display:flex;align-items:center;justify-content:space-between;height:4rem;gap:1rem}
+.brand{font:600 1.05rem Sora,sans-serif;color:var(--ink);text-decoration:none}
+.top nav{display:flex;align-items:center;gap:1.5rem}
+.top nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.97rem}
+.top nav a:hover{color:var(--ink)}
+.top nav a.cta{color:#fff;background:var(--accent);padding:.5rem 1rem;border-radius:999px}
+:root[data-theme="dark"] .top nav a.cta{color:#08102A}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .top nav a.cta{color:#08102A}}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;padding:4.5rem 0 3.5rem}
+.pill{display:inline-flex;align-items:center;gap:.5rem;background:var(--accentsoft);color:var(--accent);padding:.35rem .9rem;border-radius:999px;font-weight:500;font-size:.92rem;margin-bottom:1.5rem}
+.pill i{width:.55rem;height:.55rem;border-radius:50%;background:#1FB874}
+h1{font-size:clamp(2.7rem,6vw,4.4rem);font-weight:700}
+.role{font:500 1.35rem Sora,sans-serif;color:var(--accent);margin:1rem 0 1.25rem;letter-spacing:-.01em}
+.lede{color:var(--muted);max-width:33rem;margin:0 0 2rem;font-size:1.12rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:10px;font-weight:600;text-decoration:none;border:1.5px solid var(--line);color:var(--ink);background:var(--surf)}
+.btn:hover{border-color:var(--accent)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.main{color:#08102A}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.main{color:#08102A}}
+.res{background:var(--dark);color:var(--darkink);border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(20,40,120,.55);border:1px solid rgba(255,255,255,.08)}
+.res header{display:flex;justify-content:space-between;padding:.85rem 1.2rem;border-bottom:1px solid rgba(255,255,255,.1);font:400 .88rem "IBM Plex Mono",ui-monospace,Menlo,monospace}
+.res header b{color:var(--ok);font-weight:400}
+.res pre{margin:0;padding:1.2rem;overflow-x:auto;font:400 .86rem/1.7 "IBM Plex Mono",ui-monospace,Menlo,monospace}
+.k{color:#8FB0FF}.s{color:#8BE0B5}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);background:var(--surf);border:1px solid var(--line);border-radius:16px;margin-bottom:4.5rem}
+.stats div{padding:1.4rem 1.6rem;border-left:1px solid var(--line)}
+.stats div:first-child{border-left:0}
+.stats b{display:block;font:700 2rem Sora,sans-serif;letter-spacing:-.02em}
+.stats span{color:var(--muted);font-size:.97rem}
+section{padding:3.5rem 0}
+.hd{margin-bottom:2.25rem;max-width:36rem}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:700}
+.hd p{color:var(--muted);margin:.75rem 0 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:1.75rem;display:flex;flex-direction:column;gap:.9rem}
+.card.lead{grid-column:1/-1;border-color:var(--accent);flex-direction:row;gap:2rem;align-items:flex-start}
+.card.lead>div{flex:1}
+.card h3{font-size:1.3rem}
+.card p{margin:0;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:auto}
+.chips span{background:var(--accentsoft);color:var(--accent);padding:.25rem .7rem;border-radius:999px;font-size:.86rem;font-weight:500}
+.job{display:grid;grid-template-columns:13rem 1fr;gap:2rem;padding:1.75rem 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .when{color:var(--muted);font-weight:500}
+.job .when small{display:block;font-weight:400}
+.job h3{font-size:1.3rem;margin-bottom:.2rem}
+.job .co{color:var(--accent);font-weight:600;margin-bottom:.75rem}
+.job ul{margin:0;padding-left:1.1rem;max-width:42rem}
+.job li{margin:.35rem 0}
+.sk{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.sk div{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:1.5rem}
+.sk h3{font-size:1.05rem;margin-bottom:.9rem}
+.sk .chips span{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.sk .chips{margin-top:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.two h2{font-size:1.7rem;margin-bottom:1.25rem}
+.two ul{list-style:none;margin:0;padding:0;background:var(--surf);border:1px solid var(--line);border-radius:16px}
+.two li{padding:1rem 1.4rem;border-top:1px solid var(--line);font-weight:500}
+.two li:first-child{border-top:0}
+.two small{display:block;color:var(--muted);font-weight:400}
+.cta-band{background:var(--dark);color:var(--darkink);border-radius:24px;padding:3.5rem 2.5rem;margin:3rem 0 2rem}
+.cta-band h2{color:#fff;max-width:28rem}
+.cta-band p{color:#A9B7D8;max-width:32rem;margin:1rem 0 2rem}
+.cta-band .btn{background:transparent;color:#fff;border-color:rgba(255,255,255,.25)}
+.cta-band .btn.main{background:#fff;color:#0B1226;border-color:#fff}
+footer{padding:1rem 0 3rem;color:var(--muted);font-size:.95rem}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}.svc div{border-top:3px solid var(--accent);padding-top:1.1rem}.svc h3{font-size:1.1rem;margin-bottom:.5rem}.svc p{margin:0;color:var(--muted);font-size:.98rem}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);counter-reset:s;border:1px solid var(--line);border-radius:16px;background:var(--surf);overflow:hidden}.steps div{padding:1.4rem;border-left:1px solid var(--line);counter-increment:s}.steps div:first-child{border-left:0}.steps div::before{content:counter(s);display:block;font:700 1.6rem Sora,sans-serif;color:var(--accent);margin-bottom:.5rem}.steps h3{font-size:1.05rem;margin-bottom:.4rem}.steps p{margin:0;color:var(--muted);font-size:.95rem}
+.pipe{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.75rem;padding:0;list-style:none}.pipe li{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:.55rem 1rem;font-weight:500}.pipe li+li::before{content:"›";color:var(--accent);margin-right:.7rem;font-weight:700}
+.tg{background:none;border:1.5px solid var(--line);color:var(--ink);width:2.2rem;height:2.2rem;border-radius:50%;font-size:1rem;cursor:pointer}.tg:hover{border-color:var(--accent)}
+.art{border-radius:12px;overflow:hidden;background:color-mix(in srgb,var(--accentsoft) 55%,var(--surf));border:1px solid var(--line)}.art svg{display:block;width:100%;height:auto}
+.art .f{fill:var(--surf);stroke:var(--accent);stroke-width:1.5}.art .f2{fill:var(--accentsoft);stroke:var(--accent);stroke-width:1.5}.art .s{fill:var(--accent)}.art .l{fill:none;stroke:var(--accent);stroke-width:2}.art .t2{font:600 13px Inter,sans-serif;fill:var(--ink)}.art .t3{font:600 13px Inter,sans-serif;fill:var(--bg)}
+.st{color:var(--muted);font-size:.92rem;font-weight:500}.card .st{margin-top:-.4rem}
+.art .t4{font:400 12px Inter,sans-serif;fill:var(--muted)}.art .t5{font:400 12px Inter,sans-serif;fill:var(--bg)}.art .mk{fill:var(--accent)}.art.wide{overflow-x:auto}.art.wide svg{min-width:720px}
+.flow{list-style:none;margin:2.25rem 0 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem 3rem;counter-reset:f}.flow li{counter-increment:f;border-top:1px solid var(--line);padding-top:1rem}.flow li::before{content:counter(f,decimal-leading-zero);display:block;font:700 .95rem Sora,sans-serif;color:var(--accent);margin-bottom:.3rem}.flow h3{font-size:1.1rem;margin-bottom:.3rem}.flow p{margin:0;color:var(--muted);font-size:.98rem}
+@media (max-width:820px){.flow{grid-template-columns:1fr}}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#fff;padding:.6rem 1rem;z-index:20;border-radius:0 0 8px 0}.skip:focus{left:0}
+.card:hover{border-color:var(--accent);box-shadow:0 16px 32px -22px rgba(20,40,120,.5)}
+@media (prefers-reduced-motion:no-preference){.card,.btn{transition:border-color .2s,box-shadow .2s,transform .2s}.card:hover{transform:translateY(-2px)}}
+.fl{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin-bottom:.9rem}.fl a{color:var(--muted);text-decoration:none;font-weight:500}.fl a:hover{color:var(--accent)}
+@media (min-width:821px){.card.lead.rev{flex-direction:row-reverse}}
+@media (max-width:1000px){.svc{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.steps div{border-left:0;border-top:1px solid var(--line)}.steps div:first-child{border-top:0}}
+@media (max-width:560px){.svc{grid-template-columns:1fr}}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding-top:2.5rem}.top nav a:not(.cta){display:none}.stats{grid-template-columns:1fr}.stats div{border-left:0;border-top:1px solid var(--line)}.stats div:first-child{border-top:0}.grid,.sk,.two{grid-template-columns:1fr}.card.lead{flex-direction:column;gap:.9rem}.job{grid-template-columns:1fr;gap:.5rem}.cta-band{padding:2.5rem 1.5rem}}
+@media (prefers-reduced-motion:no-preference){.res{animation:rise .8s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(16px)}}}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<header class="top"><div class="w">
+<a class="brand" href="#top">Christian Villamer</a>
+<nav aria-label="Main"><a href="#work">Work</a><a href="#projects">Projects</a><a href="#devops">DevOps</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a class="cta" href="#contact">Contact</a><button class="tg" id="tg" type="button" aria-label="Switch light or dark theme">◐</button></nav>
+</div></header>
+
+<main id="top">
+<div class="w">
+<div class="hero">
+<div>
+<span class="pill"><i></i>Open to senior and leadership roles</span>
+<h1>Christian R. Villamer</h1>
+<p class="role">Back-end engineer and technical lead</p>
+<p class="lede">I build reliable APIs and business systems, and lead the small teams that ship them: event-driven services, payment integrations, and HR and warehouse platforms, from requirements to production support.</p>
+<div class="btns"><a class="btn main" href="#contact">Get in touch</a><a class="btn" href="https://github.com/cvillamer13">View GitHub</a></div>
+</div>
+<div class="res" role="img" aria-label="A JSON profile summary of Christian Villamer">
+<header><span>GET /christian</span><b>200 OK</b></header>
+<pre><span class="k">{</span>
+  <span class="k">"role"</span>: <span class="s">"Software Engineer III"</span>,
+  <span class="k">"company"</span>: <span class="s">"Stratpoint Technologies"</span>,
+  <span class="k">"stack"</span>: [<span class="s">"TypeScript"</span>, <span class="s">"Node.js"</span>,
+            <span class="s">"Fastify"</span>, <span class="s">"Kafka"</span>,
+            <span class="s">"PostgreSQL"</span>, <span class="s">"AWS"</span>],
+  <span class="k">"certified"</span>: <span class="s">"AWS Developer – Associate"</span>,
+  <span class="k">"location"</span>: <span class="s">"Philippines"</span>
+<span class="k">}</span></pre>
+</div>
+</div>
+<div class="stats">
+<div><b>5+ years</b><span>Building back-end and enterprise systems</span></div>
+<div><b>Leads 3 engineers</b><span>Two junior developers and a cloud engineer</span></div>
+<div><b>AWS certified</b><span>Developer – Associate, 2026</span></div>
+</div>
+</div>
+
+<section id="about"><div class="w">
+<div class="hd"><h2>What I do</h2><p>The work I’m most often trusted with, and what I bring to it.</p></div>
+<div class="svc">
+<div><h3>API development</h3><p>RESTful services in TypeScript and Node.js with Fastify or Express, and in PHP with Laravel.</p></div>
+<div><h3>Event-driven systems</h3><p>Asynchronous processing with Kafka and AWS SQS, plus S3 for file workflows.</p></div>
+<div><h3>Business systems</h3><p>HRIS, payroll, warehouse and asset platforms built closely with the people who use them.</p></div>
+<div><h3>Cloud delivery</h3><p>Containerized releases through Helm and ArgoCD, with Prometheus and Grafana watching production.</p></div>
+</div>
+</div></section>
+
+<section id="work"><div class="w">
+<div class="hd"><h2>Selected work</h2><p>Systems I’ve designed, built and supported across telecom, HR and logistics.</p></div>
+<div class="grid">
+<article class="card lead"><div><h3>Auto Renew</h3><p>A subscription and plan auto-renewal service that handles renewals through Kafka events, built in TypeScript at Stratpoint.</p></div><div><p>Part of the Globe product platform, alongside the receipt processing APIs, with asynchronous workflows on AWS SQS and S3.</p><div class="chips" style="margin-top:1rem"><span>TypeScript</span><span>Kafka</span><span>AWS SQS</span><span>S3</span></div></div></article>
+<article class="card"><h3>Receipt processing APIs</h3><p>REST APIs on Fastify for Globe product receipts. Shipped with Docker, Helm and ArgoCD, and monitored with Prometheus and Grafana.</p><div class="chips"><span>Fastify</span><span>Docker</span><span>ArgoCD</span><span>Grafana</span></div></article>
+<article class="card"><h3>HRIS and payroll</h3><p>Employee records, attendance, leave, payroll and performance evaluation. At Datamobility I owned it end to end, from requirements to user support.</p><div class="chips"><span>Laravel</span><span>PHP</span><span>MySQL</span></div></article>
+<article class="card"><h3>Warehouse management</h3><p>Inventory tracking, stock transfers and warehouse reporting that replaced manual processes.</p><div class="chips"><span>Laravel</span><span>SQL Server</span></div></article>
+<article class="card"><h3>Payment integrations</h3><p>Secure APIs and webhooks for Maya and UBPay, enabling real-time transaction validation.</p><div class="chips"><span>REST</span><span>Webhooks</span><span>Maya</span><span>UBPay</span></div></article>
+<article class="card"><h3>Asset and biometric systems</h3><p>Tools that give visibility into company assets and employee attendance.</p><div class="chips"><span>PHP</span><span>MongoDB</span><span>Python</span></div></article>
+</div>
+</div></section>
+
+<section id="projects"><div class="w">
+<div class="hd"><h2>Personal projects</h2><p>What I build outside client work: recommendations, small language models and faster ways to ship software.</p></div>
+<div class="grid">
+<article class="card lead"><div><div class="art"><svg viewBox="0 0 400 190" role="img" aria-label="Document platform feeding an AI service layer with tagging, summary, search and RAG, producing answers"><path class="l" d="M98 95H130M280 95H312"/><rect class="f" x="14" y="70" width="84" height="50" rx="10"/><text class="t2" x="56" y="100" text-anchor="middle">DMS</text><rect class="f2" x="130" y="16" width="150" height="158" rx="14"/><text class="t2" x="205" y="40" text-anchor="middle">AI service layer</text><g class="f"><rect x="138" y="56" width="66" height="44" rx="8"/><rect x="208" y="56" width="66" height="44" rx="8"/><rect x="138" y="112" width="66" height="44" rx="8"/></g><rect class="s" x="208" y="112" width="66" height="44" rx="8"/><g class="t2"><text x="171" y="83" text-anchor="middle">Tagging</text><text x="241" y="83" text-anchor="middle">Summary</text><text x="171" y="139" text-anchor="middle">Search</text></g><text class="t3" x="241" y="139" text-anchor="middle">RAG</text><rect class="s" x="312" y="70" width="76" height="50" rx="10"/><text class="t3" x="350" y="100" text-anchor="middle">Answers</text></svg></div></div><div><h3>Document Management System</h3><p class="st">In development · AI layer in design</p><p>A document platform with storage that switches between an S3 bucket and a local folder by configuration, secured with bcrypt password hashing and JWT authentication.</p><p style="margin-top:.75rem">Next is an AI service layer: a FastAPI service running ONNX models, including a transformer encoder trained from scratch. It will tag documents, summarize them, search by content and answer questions. Retrieval-augmented generation (RAG) pulls the relevant passages from stored documents so each answer stays grounded in the files.</p><div class="chips" style="margin-top:1rem"><span>FastAPI</span><span>ONNX</span><span>RAG</span><span>S3</span><span>JWT</span></div></div></article>
+<article class="card lead rev"><div><div class="art"><svg viewBox="0 0 400 190" role="img" aria-label="Payment flow from app to payments API to gateway, with a webhook confirming the payment back to the app"><path class="l" d="M98 70H155M245 70H302"/><path class="l" stroke-dasharray="6 5" d="M344 95V132H56V95"/><rect class="f" x="14" y="45" width="84" height="50" rx="10"/><text class="t2" x="56" y="75" text-anchor="middle">App</text><rect class="s" x="155" y="45" width="90" height="50" rx="10"/><text class="t3" x="200" y="75" text-anchor="middle">Pay API</text><rect class="f" x="302" y="45" width="84" height="50" rx="10"/><text class="t2" x="344" y="75" text-anchor="middle">Gateway</text><text class="t2" x="200" y="160" text-anchor="middle">Webhook confirms payment</text></svg></div></div><div><h3>Fintech payments app</h3><p class="st">Ongoing project</p><p>A fintech app with payment processing at its core: secure payment APIs, gateway webhooks and real-time transaction validation, so every payment is confirmed before the app acts on it.</p><div class="chips" style="margin-top:1rem"><span>Payments</span><span>REST API</span><span>Webhooks</span></div></div></article>
+<article class="card"><div class="art"><svg viewBox="0 0 400 190" role="img" aria-label="Hierarchy with one orchestrator, three lead agents and six specialist agents"><path class="l" d="M200 44V57M66 57H334M66 57V70M200 57V70M334 57V70M66 100V120M30 120H102M30 120V140M102 120V140M200 100V120M164 120H236M164 120V140M236 120V140M334 100V120M298 120H370M298 120V140M370 120V140"/><rect class="s" x="145" y="10" width="110" height="34" rx="9"/><text class="t3" x="200" y="32" text-anchor="middle">Orchestrator</text><g class="f"><rect x="24" y="70" width="84" height="30" rx="8"/><rect x="158" y="70" width="84" height="30" rx="8"/><rect x="292" y="70" width="84" height="30" rx="8"/></g><g class="t2"><text x="66" y="90" text-anchor="middle">Lead agent</text><text x="200" y="90" text-anchor="middle">Lead agent</text><text x="334" y="90" text-anchor="middle">Lead agent</text></g><g class="f2"><rect x="2" y="140" width="56" height="26" rx="7"/><rect x="74" y="140" width="56" height="26" rx="7"/><rect x="136" y="140" width="56" height="26" rx="7"/><rect x="208" y="140" width="56" height="26" rx="7"/><rect x="270" y="140" width="56" height="26" rx="7"/><rect x="342" y="140" width="56" height="26" rx="7"/></g></svg></div><h3>Multi-agent orchestrator</h3><p class="st">Personal project</p><p>An orchestrator that plans a task and delegates it down a hierarchy: lead agents split the work and specialist agents carry it out.</p><div class="chips"><span>Agents</span><span>Orchestration</span><span>Delegation</span></div></article>
+<article class="card"><div class="art"><svg viewBox="0 0 400 190" role="img" aria-label="Tokens passing through attention and feed-forward layers to an output"><g class="f2"><rect x="40" y="22" width="36" height="24" rx="5"/><rect x="98" y="22" width="36" height="24" rx="5"/><rect x="156" y="22" width="36" height="24" rx="5"/><rect x="214" y="22" width="36" height="24" rx="5"/><rect x="272" y="22" width="36" height="24" rx="5"/><rect x="330" y="22" width="36" height="24" rx="5"/></g><path class="l" d="M58 46Q145 90 232 46"/><path class="l" d="M174 46Q232 80 290 46"/><path class="l" d="M116 46Q240 98 348 46"/><rect class="f" x="40" y="100" width="326" height="24" rx="7"/><text class="t2" x="203" y="117" text-anchor="middle">Self-attention</text><rect class="f" x="40" y="130" width="326" height="24" rx="7"/><text class="t2" x="203" y="147" text-anchor="middle">Feed-forward</text><rect class="s" x="40" y="160" width="326" height="22" rx="7"/><text class="t3" x="203" y="176" text-anchor="middle">Next-token output</text></svg></div><h3>Tiny transformer, built from scratch</h3><p class="st">AI research build</p><p>A small language model trained from scratch to be the AI layer for a SaaS platform covering HRIS, accounting, documents and ticketing, fine-tuned on question-and-answer pairs distilled from a larger model.</p><div class="chips"><span>Python</span><span>Transformers</span><span>pgvector</span></div></article>
+<article class="card"><div class="art"><svg viewBox="0 0 400 190" role="img" aria-label="Four documents in sequence: BRD, PRD, design and task backlog"><g class="f"><rect x="16" y="34" width="76" height="96" rx="9"/><rect x="116" y="34" width="76" height="96" rx="9"/><rect x="216" y="34" width="76" height="96" rx="9"/></g><rect class="s" x="316" y="34" width="76" height="96" rx="9"/><g class="l"><path d="M92 82H116M192 82H216M292 82H316"/><path d="M30 54H78M30 70H66M30 86H72M130 54H178M130 70H166M130 86H172M230 54H278M230 70H266M230 86H272"/></g><path d="M330 54H378M330 70H366M330 86H372" stroke="var(--bg)" stroke-width="2" fill="none"/><g class="t2"><text x="54" y="160" text-anchor="middle">BRD</text><text x="154" y="160" text-anchor="middle">PRD</text><text x="254" y="160" text-anchor="middle">Design</text><text x="354" y="160" text-anchor="middle">Tasks</text></g></svg></div><h3>AI-assisted software lifecycle</h3><p class="st">Workflow and guide</p><p>A documentation-first way to build with AI: requirements, architecture and a CSV task backlog generated from a project brief, then handed to coding agents through MCP.</p><div class="chips"><span>OpenCode</span><span>DeepSeek</span><span>MCP</span></div></article>
+<article class="card"><div class="art"><svg viewBox="0 0 400 190" role="img" aria-label="Point-of-sale screen with a product grid and a cart"><rect class="f" x="30" y="14" width="340" height="162" rx="12"/><g class="f2"><rect x="46" y="34" width="60" height="44" rx="7"/><rect x="114" y="34" width="60" height="44" rx="7"/><rect x="182" y="34" width="60" height="44" rx="7"/><rect x="46" y="88" width="60" height="44" rx="7"/><rect x="114" y="88" width="60" height="44" rx="7"/><rect x="182" y="88" width="60" height="44" rx="7"/></g><path class="l" d="M262 44H350M262 64H330M262 84H344M262 104H322"/><rect class="s" x="262" y="138" width="88" height="24" rx="7"/><text class="t3" x="306" y="155" text-anchor="middle">Pay</text></svg></div><h3>Point-of-sale system</h3><p class="st">Planned build</p><p>A basic POS in React with login and a database, specified with requirements, architecture diagrams and a phased task backlog.</p><div class="chips"><span>React</span><span>JavaScript</span><span>Mermaid</span></div></article>
+</div>
+</div></section>
+
+<section id="devops"><div class="w">
+<div class="hd"><h2>DevOps project: automated delivery</h2><p>A GitOps pipeline that carries a code change from a feature branch to a running, monitored application, with no manual deploy steps.</p></div>
+<div class="chips" style="margin:-.75rem 0 1.75rem"><span>GitHub / GitLab</span><span>Docker</span><span>Kubernetes</span><span>Helm</span><span>Argo CD</span><span>CI/CD</span><span>Prometheus</span><span>Loki</span><span>Tempo</span><span>Grafana</span></div>
+<div class="art wide"><svg viewBox="0 0 900 380" role="img" aria-label="Delivery flow: feature branch, merge request, CI build and containerize, image registry, manifest repo update, Argo CD sync, Kubernetes with Helm, then observability"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="mk" d="M0 0L10 5L0 10z"/></marker></defs><path class="l" marker-end="url(#ah)" d="M215 56H243"/><path class="l" marker-end="url(#ah)" d="M435 56H463"/><path class="l" marker-end="url(#ah)" d="M655 56H683"/><path class="l" marker-end="url(#ah)" d="M560 88V162"/><path class="l" marker-end="url(#ah)" d="M465 196H437"/><path class="l" marker-end="url(#ah)" d="M245 196H217"/><path class="l" marker-end="url(#ah)" d="M120 228V274"/><rect class="f" x="25" y="24" width="190" height="64" rx="12"/><text class="t2" x="120" y="52" text-anchor="middle">1 · Feature branch</text><text class="t4" x="120" y="72" text-anchor="middle">frontend, backend, database</text><rect class="f" x="245" y="24" width="190" height="64" rx="12"/><text class="t2" x="340" y="52" text-anchor="middle">2 · Merge request</text><text class="t4" x="340" y="72" text-anchor="middle">review, then merge to main</text><rect class="s" x="465" y="24" width="190" height="64" rx="12"/><text class="t3" x="560" y="52" text-anchor="middle">3 · CI pipeline</text><text class="t5" x="560" y="72" text-anchor="middle">build and containerize</text><rect class="f" x="685" y="24" width="190" height="64" rx="12"/><text class="t2" x="780" y="52" text-anchor="middle">4 · Image registry</text><text class="t4" x="780" y="72" text-anchor="middle">Docker Hub or GitLab</text><rect class="f" x="465" y="164" width="190" height="64" rx="12"/><text class="t2" x="560" y="192" text-anchor="middle">5 · Manifest repo</text><text class="t4" x="560" y="212" text-anchor="middle">CI updates the image tag</text><rect class="f2" x="245" y="164" width="190" height="64" rx="12"/><text class="t2" x="340" y="192" text-anchor="middle">6 · Argo CD</text><text class="t4" x="340" y="212" text-anchor="middle">detects the change, syncs</text><rect class="f" x="25" y="164" width="190" height="64" rx="12"/><text class="t2" x="120" y="192" text-anchor="middle">7 · Kubernetes + Helm</text><text class="t4" x="120" y="212" text-anchor="middle">rolls out the new image</text><rect class="f2" x="25" y="276" width="850" height="88" rx="14"/><text class="t2" x="45" y="298">8 · Observability</text><g class="f"><rect x="45" y="308" width="190" height="40" rx="10"/><rect x="250" y="308" width="190" height="40" rx="10"/><rect x="455" y="308" width="190" height="40" rx="10"/><rect x="660" y="308" width="190" height="40" rx="10"/></g><g class="t2"><text x="140" y="333" text-anchor="middle">Prometheus · metrics</text><text x="345" y="333" text-anchor="middle">Loki · logs</text><text x="550" y="333" text-anchor="middle">Tempo · traces</text><text x="755" y="333" text-anchor="middle">Grafana · dashboards</text></g></svg></div>
+<ol class="flow">
+<li><h3>Push to a feature branch</h3><p>Frontend, backend or database changes are committed to a feature branch on GitHub or GitLab.</p></li>
+<li><h3>Open a merge request</h3><p>The merge request into main is the review step, and merging it is what starts the pipeline.</p></li>
+<li><h3>CI builds and containerizes</h3><p>When main updates, the CI pipeline builds the service and packages it as a Docker image.</p></li>
+<li><h3>Push to a registry</h3><p>The image is published to Docker Hub or the GitLab container registry under a build-specific tag.</p></li>
+<li><h3>Update the manifest repo</h3><p>CI automatically edits the image tag in a separate manifest repository, the single source of truth for what should be running.</p></li>
+<li><h3>Argo CD syncs</h3><p>Argo CD notices the manifest change and updates the Helm release to match, so deployment follows Git instead of manual commands.</p></li>
+<li><h3>Kubernetes rolls out</h3><p>Helm deploys the new image to the Kubernetes cluster and the application runs the updated version.</p></li>
+<li><h3>Observe everything</h3><p>Prometheus collects metrics, Loki gathers logs and Tempo records traces. Grafana brings all three together on dashboards to monitor the system.</p></li>
+</ol>
+</div></section>
+
+<section id="experience"><div class="w">
+<div class="hd"><h2>Experience</h2></div>
+<div class="job"><div class="when">Sep 2025 – present<small>Mandaluyong City</small></div><div><h3>Software Engineer III</h3><div class="co">Stratpoint Technologies</div><ul><li>Lead two junior developers and one cloud engineer.</li><li>Design and maintain TypeScript and Fastify REST APIs for Globe receipt processing.</li><li>Built the Kafka-based Auto Renew service and AWS SQS and S3 workflows.</li><li>Ship through Docker, Helm, ArgoCD and GitOps pipelines, with Prometheus and Grafana for observability.</li></ul></div></div>
+<div class="job"><div class="when">Jul 2023 – Sep 2025<small>Makati City</small></div><div><h3>Software Engineer II</h3><div class="co">Jaka Investment Corporation</div><ul><li>Managed three junior developers, handled their tasks and worked with stakeholders to meet business goals.</li><li>Built the HRIS, warehouse, asset and biometric systems on Laravel, Python and several databases.</li><li>Ran database administration, migrations and Linux production servers.</li><li>Gathered requirements, wrote documentation and training, and handled production support.</li></ul></div></div>
+<div class="job"><div class="when">Jun 2021 – Jun 2023<small>Ortigas City</small></div><div><h3>Data Analyst / Programmer Analyst</h3><div class="co">Datamobility Corporation</div><ul><li>Owned a full HRIS end to end, reducing manual HR work and improving data accuracy.</li><li>Integrated Maya and UBPay payment gateways through APIs and webhooks.</li></ul></div></div>
+</div></section>
+
+<section id="skills"><div class="w">
+<div class="hd"><h2>Skills</h2></div>
+<div class="sk">
+<div><h3>Languages</h3><div class="chips"><span>TypeScript</span><span>JavaScript</span><span>PHP</span><span>Python</span><span>C#</span></div></div>
+<div><h3>Frameworks</h3><div class="chips"><span>Node.js</span><span>Fastify</span><span>Express</span><span>Laravel</span><span>Flask</span><span>React</span></div></div>
+<div><h3>Data</h3><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>SQL Server</span><span>MongoDB</span></div></div>
+<div><h3>Cloud and delivery</h3><div class="chips"><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Helm</span><span>ArgoCD</span><span>GitOps</span></div></div>
+<div><h3>Messaging and monitoring</h3><div class="chips"><span>Kafka</span><span>SQS</span><span>Prometheus</span><span>Grafana</span></div></div>
+<div><h3>Practice</h3><div class="chips"><span>Agile/Scrum</span><span>Code review</span><span>Release management</span><span>AI-assisted development</span></div></div>
+</div>
+</div></section>
+
+<section id="process"><div class="w">
+<div class="hd"><h2>How I work</h2><p>I stay with a system from the first conversation to long after launch.</p></div>
+<div class="steps">
+<div><h3>Understand</h3><p>Gather requirements with business stakeholders.</p></div>
+<div><h3>Design</h3><p>Define the system specification and data model.</p></div>
+<div><h3>Build</h3><p>Write, test and review code with the team.</p></div>
+<div><h3>Ship</h3><p>Release through containerized, GitOps pipelines.</p></div>
+<div><h3>Support</h3><p>Fix issues, write documentation and train users.</p></div>
+</div>
+<ul class="pipe" aria-label="Typical delivery path"><li>Code review</li><li>Docker image</li><li>Helm chart</li><li>ArgoCD sync</li><li>Kubernetes</li><li>Prometheus and Grafana</li></ul>
+</div></section>
+
+<section><div class="w two">
+<div><h2>Certifications</h2><ul>
+<li>AWS Certified Developer – Associate<small>Amazon Web Services · 2026–2029</small></li>
+<li>Data Scientist Associate<small>DataCamp · 2025–2027</small></li>
+<li>Lean Six Sigma Yellow Belt<small>2025</small></li></ul></div>
+<div><h2>Education</h2><ul>
+<li>MS Computer Science<small>AMA University, Quezon City · in progress</small></li>
+<li>BS Computer Science<small>ACLC College of Santa Maria · 2016–2020</small></li></ul></div>
+</div></section>
+
+<div class="w"><section id="contact" class="cta-band">
+<h2>Let’s build something reliable.</h2>
+<p>I’m open to senior back-end, platform and engineering leadership roles. Email is the fastest way to reach me.</p>
+<div class="btns"><a class="btn main" href="mailto:cvillamer13@gmail.com">cvillamer13@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/cvillamer13">LinkedIn</a><a class="btn" href="https://github.com/cvillamer13">GitHub</a><a class="btn" href="https://gitlab.com/cvillamer13">GitLab</a></div>
+</section></div>
+</main>
+<footer><div class="w"><div class="fl"><a href="https://github.com/cvillamer13">GitHub</a><a href="https://gitlab.com/cvillamer13">GitLab</a><a href="https://www.linkedin.com/in/cvillamer13">LinkedIn</a><a href="mailto:cvillamer13@gmail.com">Email</a><a href="#top">Back to top</a></div>© Christian R. Villamer · Based in the Philippines</div></footer>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById('tg');
+try{var s=localStorage.getItem('theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
+b.addEventListener('click',function(){var d=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');var n=d==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}});})();
+</script>
+</body>
+</html>
